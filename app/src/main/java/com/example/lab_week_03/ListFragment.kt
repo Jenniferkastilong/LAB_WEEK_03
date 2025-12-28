@@ -19,10 +19,13 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Updated list with 5 items
         val coffeeList = listOf<View>(
             view.findViewById(R.id.affogato),
             view.findViewById(R.id.americano),
-            view.findViewById(R.id.latte)
+            view.findViewById(R.id.latte),
+            view.findViewById(R.id.espresso),
+            view.findViewById(R.id.cappuccino)
         )
 
         coffeeList.forEach { coffee ->
